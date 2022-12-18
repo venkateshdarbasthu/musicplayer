@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            text-align: center;
+
+        }
+        h1{
+            margin: 25px 0px 0px 0px;
+            color: rgb(14, 192, 8);
+            font-style: oblique;
+        }
+        h2{
+            color: blue;
+            font-style: italic;
+        }
+        h3{
+            color: rgb(218, 20, 218);
+        }
+        label{
+            color: rgb(245, 37, 37);
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Please choose a course you want to join from MRUH</h1>
+    <form action = "THANK_YOU_PAGE.html" method = "get">
+        <h2>Courses Offered at MRUH</h2>
+        <label for = "FSWD">FULL STACK:</label>
+        <input id = "FSWD" type = "radio" name = "loc" value = "FULL STACK">
+
+        <label for = "DS">DATA SCIENCE:</label>
+        <input id = "DS" type = "radio" name = "loc" value = "DATA SCIENCE">
+
+        <label for = "DM">DIGITAL MARKETING:</label>
+        <input id = "DM" type = "radio" name = "loc" value = "DIGITAL MARKETING">
+
+        <H3>Please provide rating to this course</H3>
+        <select name = "RATING">
+            <option value = "GREAT">Great</option>
+            <option value = "GOOD">Good</option>
+            <option value = "AVERAGE">Avg</option>
+            <option value = "SATISFIED">Satisfied</option>
+        </select>
+        <h3>Any other feedback</h3>
+        <textarea name = "YOUR FEEDBACK" rows = "10" cols = "100"></textarea><br>
+
+        <input type = "submit" name = " " value = "SUBMIT" onclick = "sp()">
+
+    <script>
+        function sp(){
+            alert("Thanks for Registering to full stack web dev course @ MRUH");
+        }
+    </script>
+    </form> 
+</center>
+</body>
+</html>
